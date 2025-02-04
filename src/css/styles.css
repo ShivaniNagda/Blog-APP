@@ -250,11 +250,12 @@ footer {
     gap: 1vw;
     padding: 10px;
     font-size: 0.9rem;
-    margin-top: 18vh;
+    margin-top: 8vh;
   }
   .footer{
     padding: 40px 0px 40px 0px;
   }
+  
 }
 @media screen and (max-width: 900px) {
   .nav-section ul{
@@ -322,4 +323,10 @@ footer {
     margin: 0px;
     padding: 0px;
   }
+}
+footer{
+  margin-top: 3vh;
+  padding: 20px;
+  position: relative;
+  bottom: 0px;
 }

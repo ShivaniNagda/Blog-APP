@@ -14,12 +14,13 @@ let passwordConfirmValue = confirmPassword.value;
     console.log(nameValue,emailValue,passwordValue, passwordConfirmValue);
     if (passwordValue !== passwordConfirmValue) {
     alert("Passwords do not match");
+    window.location.href = "../html/signup.html";
   } else {
     localStorage.setItem("name",nameValue);
     localStorage.setItem("email",emailValue);
     localStorage.setItem("password",passwordValue);
     alert("Registration successful");
-    window.location.href = "/src/html/signin.html";
+    window.location.href = "../html/signin.html";
   }
 }
 signupForm.addEventListener("submit",signup);
