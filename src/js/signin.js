@@ -7,10 +7,10 @@ e.preventDefault();
     let userPassword =  localStorage.getItem("password",passwordValue);
        if (emailValue !== userEmail || passwordValue !== userPassword ) {
       alert("Incorrect Credentials.");
-      window.location.href = "/src/html/signin.html";
+      window.location.href = "../html/signin.html";
     } else {
       alert("log in successfull");
-      window.location.href = "/src/html/blogger.html";
+      window.location.href = "../html/blogger.html";
     }
   }
   
