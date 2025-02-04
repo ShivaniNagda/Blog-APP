@@ -1,0 +1,32 @@
+body{
+    background-color: #f2f2f2;
+    height: fit-content !important;
+    position: relative;
+}
+
+nav , header{
+    margin-top: 0px;
+    height: fit-content;
+    position: relative;
+}
+.blogger-header{
+    position: relative;
+}
+main{
+    margin-top: 0px;
+    height: fit-content;
+    position: relative;
+}
+footer{
+    /* position: relative; */
+    margin-top: 50px;
+}
+.text-black{
+    color: black;
+}
+.text-center{
+    text-align: center;
+}
+.main-header{
+    color: black !important;
+}

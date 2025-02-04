@@ -31,65 +31,54 @@
                 </div>
                 
                 <div class="blog-h1">
-                    <div class="logo">
-                    <img src="../../Assets/Background/4.png" />
-                    </div>
-
+                   
                      <div> 
-                        <h1>BLOG</h1>
+                        <h1>LogIn Form</h1>
                     </div>
                    
                 </div>
                 
                 <div class="login-signup">
                     <ul type="none">
-                        <li><a href="../html/signin.html">Login</a></li>
-                        <li><a href="../html/signup.html">Signup</a></li> 
+                        <li><a href="./signin.html">Login</a></li>
+                        <li><a href="./signup.html">Signup</a></li> 
                       </ul>
                 </div>
                     
             </nav>
         </header>
         
-        <main>
-           
-            <article>
-               
-                <div class="Welcome-msg text-center ">
-                    <hr>
-                 
-                    <h5>Welcome to My Blog! Explore tech trends, coding tips, and
-                        lifestyle hacks. Stay updated with exciting articles</h5>
-                    <hr>
-                </div>
-              
-                <section class="trending-data">
-                    <div class="trend-data-card">
-                        
-                        <div class="card">
-                            <h1>Tech Blog</h1>
-                            <h6><strong>The Future of Web Development in 2025</strong></h6>
-                            <p>🖊 Author: Shivani Nagda | 📅 Date: Feb
-                                    3, 2025</strong></p>
-                            <img src="../../Assets/Background/1.jpg" />
 
-                            <p>"Web development is evolving rapidly. With AI-driven coding tools, faster frameworks like Next.js, and Web3 integration, developers need to stay ahead of trends. In this post, we’ll explore what’s coming next in the tech world!"</p>
-                            <strong>🔹 Key Trends in Web Development</strong>
-                            <ul>
-                                <li>AI-assisted coding (GitHub Copilot, ChatGPT
-                                    for coding)
-                                </li> <li>Progressive Web Apps (PWAs)</li>
-                                <li> WebAssembly (WASM) for high-performance
-                                    apps</li>
-                            </ul>
-
-                            <p>🎯 Conclusion: Web dev is growing fast! Keep
-                                learning new tools and adapt to trends.</p>
+            <div class="container mt-5">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <div class="card shadow-lg">
+                            <div class="card-header text-center bg-light text-dark">
+                                <h3>Log in</h3>
+                            </div>
+                            <div class="card-body">
+                                <form  >
+                                   
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Email address</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                                          </div>
+            
+                                    <div class="mb-3">
+                                        <label for="password" class="form-label">Password</label>
+                                        <input type="text" class="form-control" id="password" placeholder="Enter password" required>
+                                       </div>
+            
+                                    <button id="signinForm" type="button" class="btn btn-dark w-100">LogIn</button>
+                                    <br>
+                                    <br>
+                                    <a href="../html/signup.html" class="btn btn-light w-100">Sign up</a>
+                                </form>
+                            </div>
                         </div>
-                     </div>
-                  </div>
-                </section>
-            </article>
+                    </div>
+                </div>
+            </div>
             <footer>
                 <p>&copy; 2025 Blog With Shivani. All rights reserved.</p>
             
@@ -110,12 +99,12 @@
                 </div>
                   </footer>
               
-        </main>
+     
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous"></script>
-        <script src="./src/js/script.js"></script>
-        <script src="./src/js/toggle.js"></script>
+        <script src="../js/signin.js"></script>
+     
     </body>
 </html>
