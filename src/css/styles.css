@@ -245,6 +245,17 @@ footer {
   background-color: #a19494;
 }
 /* Desktop */
+@media screen and (max-width: 600px) {
+  .trending-data {
+    gap: 1vw;
+    padding: 10px;
+    font-size: 0.9rem;
+    margin-top: 18vh;
+  }
+  footer{
+    padding: 40px 0px 40px 0px;
+  }
+}
 @media screen and (max-width: 900px) {
   .nav-section ul{
       text-align: left;
