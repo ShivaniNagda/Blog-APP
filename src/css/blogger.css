@@ -57,3 +57,30 @@ footer{
     height: 80vh;
     border-radius: 30px;
 }
+
+@media screen and (max-width:600px){
+    .ai_blog{
+        margin-top: 1vh;
+        padding: 10px;
+    }
+    .ai_para{
+        margin-top: 1vh;
+        font-size: 1.2rem;
+        padding: 10px;
+        text-align: justify;
+    }
+    .ai_heading{
+        font-size: 2.3rem;
+        box-shadow:inset 0px 2px 2px 3px rgba(0,0,0,0.3);
+        padding: 10px;  
+    }
+    .blogger-subcontent{
+        padding: 10px;
+        background-color: #e2d5d5;
+    }
+    .blogger-subcontent img{
+        width: 70vw;
+        height: 50vh;
+        border-radius: 30px;
+    }
+}
