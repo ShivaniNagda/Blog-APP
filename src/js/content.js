@@ -2,10 +2,11 @@
     {
         "id": 1,
         "author":"laffie cron",
-        "title": "The Future of Web Development: Trends to Watch in 2025",
+        "title": `The Future of Web Development`,
+        "subtitle": `Trends to Watch in 2025`,
         "content": "The web development landscape is evolving at an unprecedented pace. With new technologies emerging rapidly, developers must stay ahead of the curve to remain relevant. Let’s explore some of the most exciting trends shaping the future of web development in 2025."
-        ,"details":{
-            "heading":[
+        ,"details":
+                    [
                 {
                 "id":1.1,
                 "heading":"AI-Powered Development",
@@ -62,6 +63,6 @@
 
                 },
         ],
-        }
+        
     }]
     export default data;

@@ -30,3 +30,30 @@ footer{
 .main-header{
     color: black !important;
 }
+.ai_blog{
+    margin-top: 1vh;
+    padding: 80px;
+}
+.ai_para{
+    margin-top: 1vh;
+    font-size: 1.3rem;
+    padding: 10px;
+    text-align: justify;
+}
+.ai_heading{
+    font-size: 3rem;
+    box-shadow:inset 0px 2px 2px 3px rgba(0,0,0,0.3);
+    padding: 30px;  
+}
+.blogger-subcontent{
+    text-align: justify;
+    padding: 40px;
+    background-color: #e2d5d5;
+}
+.blogger-subcontent img{
+    align-items: center;
+    align-self: center;
+    width: 70vw;
+    height: 80vh;
+    border-radius: 30px;
+}
