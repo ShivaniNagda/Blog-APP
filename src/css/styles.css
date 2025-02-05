@@ -206,6 +206,11 @@ section{
   gap: 5vw;
   margin-left: 20px;
   margin-right: 20px;
+  
+}
+div.card-indexblog{
+  height: 130vh !important;
+  overflow-y: scroll;
 }
 .card {
   background-color: #fff9f9;
@@ -234,28 +239,24 @@ footer {
   margin-top: 18vh;
   width: 100vw;
   overflow: hidden;
+  align-self: center;
 }
 .footer{
   /* background-color: #a19494; */
   margin: 0px;
   padding: 0px;
+ 
 }
 .footer ul li a{
   color: #000;
   background-color: #a19494;
 }
 /* Desktop */
-@media screen and (max-width: 600px) {
-  .trending-data {
-    gap: 1vw;
-    padding: 10px;
-    font-size: 0.9rem;
-    margin-top: 8vh;
+
+@media screen and (max-width:1200) {
+  div.card-indexblog{
+    height:150vh !important;
   }
-  .footer{
-    padding: 40px 0px 40px 0px;
-  }
-  
 }
 @media screen and (max-width: 900px) {
   .nav-section ul{
@@ -263,7 +264,9 @@ footer {
       padding: 10px;
       text-transform:capitalize;
   }
-
+  div.card-indexblog{
+    height:150vh !important;
+  }
   .social-icons ul{
     display: none;
   }
@@ -280,6 +283,22 @@ footer {
     align-items: center;
     font: 0.9rem sans-serif;
   }
+ 
+}
+@media screen and (max-width: 600px) {
+  .trending-data {
+    gap: 1vw;
+    padding: 10px;
+    font-size: 0.9rem;
+    margin-top: 8vh;
+  }
+  .footer{
+    padding: 40px 0px 40px 0px;
+  }
+  div.card-indexblog{
+    height: fit-content !important;
+  }
+  
 }
 /* For Mobile view */
 @media screen and (max-width: 600px) {
@@ -322,7 +341,15 @@ footer {
     flex-direction: row;
     margin: 0px;
     padding: 0px;
+    align-self: center;
   }
+  .image-1 img {
+    width: 100vw;
+    height: 80vh;
+    /* position: absolute; */
+    animation: change-image 3s ease-in-out;
+  }
+  
 }
 footer{
   margin-top: 3vh;
