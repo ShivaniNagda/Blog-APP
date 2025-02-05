@@ -1,6 +1,5 @@
 function signin(e) {
 e.preventDefault();
-  alert('Hye')
   let emailValue = email.value;
   let passwordValue = password.value;
       let userEmail = localStorage.getItem("email",emailValue);

@@ -125,7 +125,13 @@
   .sidebar button[type="submit"]:hover {
     background-color: rgb(61, 37, 37);
   }
-  
+  .post input{
+    width: 65%;
+    margin-left: 3vw;
+  }
+  .post .delete-button{
+    margin-left: 3vw;
+  }
   @media screen and (max-width:900px) {
     .container {
       max-width: 98vw;
@@ -195,5 +201,19 @@
       border: none;
       cursor: pointer;
     }
-    
+    .post button {
+      padding: 10px 20px;
+      min-width: 7vw;
+      margin-left: 2vw;
+      margin-top: 2vh;
+    }
+  
+    .post input{
+      width: 90%;
+      margin-left: 3vw;
+    }
+  .comments-container p{
+    padding: 0px;
   }
+  }
+

@@ -24,22 +24,32 @@ let postsData = [
       imageElement.src = post.image;
       imageElement.alt = 'Post Image';
   
+      const deleteButton = document.createElement('button');
+      deleteButton.textContent=`Delete`
+      deleteButton.classList.add('delete-button');
+      deleteButton.style.backgroundColor = 'red';
+      deleteButton.addEventListener('click',()=>{
+        deletePost(post.id);
+        
+      })
+
       const likeButton = document.createElement('button');
       likeButton.textContent = `Like`;
       likeButton.classList.add('like-button');
       likeButton.addEventListener('click', () => {
         if (!likedPosts.has(post.id)) {
+          console.log(!likedPosts.has(post.id),post.id)
             likePost(post.id);
             likedPosts.add(post.id);
             likeButton.disabled = true;  
             for(let ind of likedPosts){
                 const button = document.querySelectorAll('.like-button')[ind-1];
                 button.style.backgroundColor = 'red';
-        
+              
             }
     }
 });
-  
+
       const commentInput = document.createElement('input');
       commentInput.type = 'text';
       commentInput.placeholder = 'Write a comment...';
@@ -67,12 +77,12 @@ let postsData = [
       });
   
       postElement.appendChild(authorElement);
-
       postElement.appendChild(imageElement);
       postElement.appendChild(contentElement);
-      postElement.appendChild(likeButton);
       postElement.appendChild(commentInput);
+      postElement.appendChild(likeButton);
       postElement.appendChild(commentButton);
+      postElement.appendChild(deleteButton);
       postElement.appendChild(postFooter);
       postElement.appendChild(commentsContainer);
   
@@ -96,7 +106,12 @@ let postsData = [
       renderPosts();
     }
   }
-  
+  function deletePost(postId) {
+    postsData = postsData.filter(post => post.id !== postId);
+    console.log(postId,postsData)
+    renderPosts();
+  }
+ 
   // Function to handle adding a comment
   function addComment(postId, comment) {
     const post = postsData.find(post => post.id === postId);
